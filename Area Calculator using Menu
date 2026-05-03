@@ -1,0 +1,48 @@
+def sq():
+    print('enter side')
+    a = int(input())
+    print(a * a)
+
+def rect(l, b):
+    print(l * b)
+
+def circle(r):
+    print('area', 3.14 * r * r)
+
+def triangle(b, h):
+    print('area', 0.5 * b * h)
+
+while True:
+    print('1.sq')
+    print('2.rect')
+    print('3.circle')
+    print('4.triangle')
+    print('5.exit')
+
+    ch = int(input('enter your choice: '))
+
+    if ch == 1:
+        sq()
+
+    elif ch == 2:
+        print('length and breadth')
+        l = int(input())
+        b = int(input())
+        rect(l, b)
+
+    elif ch == 3:
+        print('enter radius')
+        r = int(input())
+        circle(r)
+
+    elif ch == 4:
+        print('enter base and height')
+        b = int(input())
+        h = int(input())
+        triangle(b, h)
+
+    elif ch == 5:
+        break
+
+    else:
+        print('invalid choice')
